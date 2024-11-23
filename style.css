@@ -1,0 +1,94 @@
+body{
+  background:#44A8FF;
+  display:grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+*{
+  margin:0;
+  padding: 0;
+  color: white;
+}
+main{
+ width:90vw;
+ height:60vh;
+ display: grid;
+ place-items: center;
+}
+
+button:not(#btnRe){
+  background: transparent;
+  width:20vw;
+  max-width: 10vh;
+  aspect-ratio: 1/1;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 3vh;
+  border-radius:10px;
+  display:grid;
+  place-items: center;
+}
+.celdas{
+  border: 10px solid black;
+}
+#changeCont{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: none
+}
+#loader{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  position: fixed;
+  border: 10px solid transparent;
+  border-left: 10px solid white;
+  display: grid;
+  place-items: center;
+  animation: change 1s linear infinite;
+}
+
+#msgCont{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(5px);
+  display: none;
+}
+
+#boxmsg{
+  background:#01418f;
+  width: clamp(0px,40vw,500px);
+  aspect-ratio: 2/1;
+  padding: 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+  border: 10px solid white;
+}
+
+#btnRe{
+  width: clamp(0px,30vw,300px);
+  padding: 10px;;
+  background: white;
+  border-color: white;
+  border-width: 5px;
+  border-radius: 20px;
+  color: #44A8FF;
+  font-size: 2vh;
+}
+
+@keyframes change{
+  0%{
+    transform: rotate(0deg)
+  }
+  100%{
+    transform: rotate(360deg)
+  }
+}

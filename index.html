@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title>x0</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+  <div id="changeCont">
+    <div id="loader">Loading</div>
+  </div>
+  <div id="msgCont">
+    <div id="boxmsg">
+      <h1 id="msgencabezado">Ganaste</h1>
+      <p id="msgtext">haz ganado la partida</p>
+      <button id="btnRe" onclick="play(1)">Reset</button>
+    </div>
+  </div>
+<main>
+  <table>
+    <tr>
+      <td><button class="celdas" id="a0" onclick="push('0')"></button></td>
+      <td><button class="celdas" id="a1" onclick="push('1')"></button></td>
+      <td><button class="celdas" id="a2" onclick="push('2')"></button></td>
+    </tr>
+    <tr>
+      <td><button class="celdas" id="a3" onclick="push('3')"></button></td>
+      <td><button class="celdas" id="a4" onclick="push('4')"></button></td>
+      <td><button class="celdas" id="a5" onclick="push('5')"></button></td>
+    </tr>
+    <tr>
+      <td><button class="celdas" id="a6" onclick="push('6')"></button></td>
+      <td><button class="celdas" id="a7" onclick="push('7')"></button></td>
+      <td><button class="celdas" id="a8" onclick="push('8')"></button></td>
+    </tr>
+  </table>
+  <button id="btnRe" onclick="play()">De nuevo</button>
+</main>
+<script src="main.js"></script>
+</body>
+</html>
